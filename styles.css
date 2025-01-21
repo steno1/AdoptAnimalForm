@@ -29,3 +29,37 @@
     color: #333;
     margin-bottom: 20px;
   }
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0 0 0;
+}
+
+.label {
+    margin-top: 10px;
+    display: block;
+  }
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  background-color: #5cb85c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #4cae4c;
+}
