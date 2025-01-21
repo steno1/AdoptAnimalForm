@@ -44,7 +44,7 @@ Open the index.html file in any modern web browser to view the form.
 GitHub Pages
 Once you set up GitHub Pages in the repository settings, you can view your project live at:
 
-https://github.com/steno1/AdoptAnimalForm.git
+https://steno1.github.io/AdoptAnimalForm/
 
 Locally
 To run the project locally:
