@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensure consistent sizing across elements */
 }
 
 /* Body Styles */
@@ -13,24 +13,26 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #e8f4f8; /* Light blue background for a soothing effect */
 }
 
 /* Main Container Styles */
 main {
   width: 90%;
   max-width: 500px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for emphasis */
   padding: 20px;
+  border: 2px solid #6c757d; /* Subtle border for structure */
 }
 
 /* Header Styles */
 header h1 {
   text-align: center;
-  color: #333;
+  color: #006d77; /* Calming teal color for the header */
   margin-bottom: 21px;
+  font-size: 24px; /* Slightly larger font for the title */
 }
 
 /* Section Styles */
@@ -48,7 +50,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  color: #555;
+  color: #333;
   padding: 0 5px;
 }
 
@@ -63,9 +65,20 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ccc; /* Neutral border */
+  border-radius: 5px; /* Slightly rounded inputs for better aesthetics */
   margin-top: 5px;
+  background-color: #f9f9f9; /* Subtle light gray background */
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth transition on hover or focus */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #006d77; /* Highlighted teal border on focus */
+  outline: none;
+  background-color: #e6f7f8; /* Slightly lighter background on focus */
 }
 
 /* Label Styles */
@@ -78,83 +91,87 @@ label {
 
 /* Textarea Customization */
 textarea {
-  resize: vertical;
+  resize: vertical; /* Allow only vertical resizing */
 }
 
 /* Button Styles */
 button {
   width: 100%;
-  background-color: #5cb85c;
-  color: white;
+  background-color: #008080; /* Teal background for buttons */
+  color: white; /* White text for contrast */
   font-size: 16px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
 }
 
 button:hover {
-  background-color: #4cae4c;
+  background-color: #005f5f; /* Darker teal on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Slight click effect */
 }
 
 /* Responsive Design for Small Devices */
 @media (max-width: 480px) {
   main {
-      padding: 10px;
+    padding: 10px;
   }
 
   header h1 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   input,
   select,
   textarea {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   button {
-      font-size: 14px;
-      padding: 8px;
+    font-size: 14px;
+    padding: 8px;
   }
 
   label {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
 /* Responsive Design for Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   main {
-      width: 80%;
-      padding: 20px;
+    width: 80%;
+    padding: 20px;
   }
 
   header h1 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   input,
   select,
   textarea {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   button {
-      font-size: 16px;
-      padding: 12px;
+    font-size: 16px;
+    padding: 12px;
   }
 
   label {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
 /* General Media Query for Small Screens */
 @media (max-width: 600px) {
   main {
-      margin: 10px;
-      border-radius: 8px;
+    margin: 10px;
+    border-radius: 8px;
   }
 }
